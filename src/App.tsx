@@ -1,9 +1,12 @@
-import Quiz from "./composants/Quiz";
+import React, { useState } from 'react';
+import Quiz from './components/Quiz';
 
-export default function App() {
+const App: React.FC = () => {
   return (
-    <>
-    <Quiz/>
-    </>
-  )
-}
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
+      <Quiz />
+    </div>
+  );
+};
+
+export default App;
