@@ -4,168 +4,168 @@
         "nom": "C majeur",
         "degres": {
           "I": "C",
-          "ii": "Dm",
-          "iii": "Em",
+          "II": "Dm",
+          "III": "Em",
           "IV": "F",
           "V": "G",
-          "vi": "Am",
-          "vii°": "Bdim"
+          "VI": "Am",
+          "VII": "Bdim"
         }
       },
       {
         "nom": "C# majeur",
         "degres": {
           "I": "C#",
-          "ii": "D#m",
-          "iii": "E#m",
+          "II": "D#m",
+          "III": "E#m",
           "IV": "F#",
           "V": "G#",
-          "vi": "A#m",
-          "vii°": "B#dim"
+          "VI": "A#m",
+          "VII": "B#dim"
         }
       },
       {
         "nom": "Db majeur",
         "degres": {
           "I": "Db",
-          "ii": "Ebm",
-          "iii": "Fm",
+          "II": "Ebm",
+          "III": "Fm",
           "IV": "Gb",
           "V": "Ab",
-          "vi": "Bbm",
-          "vii°": "Cdim"
+          "VI": "Bbm",
+          "VII": "Cdim"
         }
       },
       {
         "nom": "D majeur",
         "degres": {
           "I": "D",
-          "ii": "Em",
-          "iii": "F#m",
+          "II": "Em",
+          "III": "F#m",
           "IV": "G",
           "V": "A",
-          "vi": "Bm",
-          "vii°": "C#dim"
+          "VI": "Bm",
+          "VII": "C#dim"
         }
       },
       {
         "nom": "Eb majeur",
         "degres": {
           "I": "Eb",
-          "ii": "Fm",
-          "iii": "Gm",
+          "II": "Fm",
+          "III": "Gm",
           "IV": "Ab",
           "V": "Bb",
-          "vi": "Cm",
-          "vii°": "Ddim"
+          "VI": "Cm",
+          "VII": "Ddim"
         }
       },
       {
         "nom": "E majeur",
         "degres": {
           "I": "E",
-          "ii": "F#m",
-          "iii": "G#m",
+          "II": "F#m",
+          "III": "G#m",
           "IV": "A",
           "V": "B",
-          "vi": "C#m",
-          "vii°": "D#dim"
+          "VI": "C#m",
+          "VII": "D#dim"
         }
       },
       {
         "nom": "F majeur",
         "degres": {
           "I": "F",
-          "ii": "Gm",
-          "iii": "Am",
+          "II": "Gm",
+          "III": "Am",
           "IV": "Bb",
           "V": "C",
-          "vi": "Dm",
-          "vii°": "Edim"
+          "VI": "Dm",
+          "VII": "Edim"
         }
       },
       {
         "nom": "F# majeur",
         "degres": {
           "I": "F#",
-          "ii": "G#m",
-          "iii": "A#m",
+          "II": "G#m",
+          "III": "A#m",
           "IV": "B",
           "V": "C#",
-          "vi": "D#m",
-          "vii°": "E#dim"
+          "VI": "D#m",
+          "VII": "E#dim"
         }
       },
       {
         "nom": "Gb majeur",
         "degres": {
           "I": "Gb",
-          "ii": "Abm",
-          "iii": "Bbm",
+          "II": "Abm",
+          "III": "Bbm",
           "IV": "Cb",
           "V": "Db",
-          "vi": "Ebm",
-          "vii°": "Fdim"
+          "VI": "Ebm",
+          "VII": "Fdim"
         }
       },
       {
         "nom": "G majeur",
         "degres": {
           "I": "G",
-          "ii": "Am",
-          "iii": "Bm",
+          "II": "Am",
+          "III": "Bm",
           "IV": "C",
           "V": "D",
-          "vi": "Em",
-          "vii°": "F#dim"
+          "VI": "Em",
+          "VII": "F#dim"
         }
       },
       {
         "nom": "Ab majeur",
         "degres": {
           "I": "Ab",
-          "ii": "Bbm",
-          "iii": "Cm",
+          "II": "Bbm",
+          "III": "Cm",
           "IV": "Db",
           "V": "Eb",
-          "vi": "Fm",
-          "vii°": "Gdim"
+          "VI": "Fm",
+          "VII": "Gdim"
         }
       },
       {
         "nom": "A majeur",
         "degres": {
           "I": "A",
-          "ii": "Bm",
-          "iii": "C#m",
+          "II": "Bm",
+          "III": "C#m",
           "IV": "D",
           "V": "E",
-          "vi": "F#m",
-          "vii°": "G#dim"
+          "VI": "F#m",
+          "VII": "G#dim"
         }
       },
       {
         "nom": "Bb majeur",
         "degres": {
           "I": "Bb",
-          "ii": "Cm",
-          "iii": "Dm",
+          "II": "Cm",
+          "III": "Dm",
           "IV": "Eb",
           "V": "F",
-          "vi": "Gm",
-          "vii°": "Adim"
+          "VI": "Gm",
+          "VII": "Adim"
         }
       },
       {
         "nom": "B majeur",
         "degres": {
           "I": "B",
-          "ii": "C#m",
-          "iii": "D#m",
+          "II": "C#m",
+          "III": "D#m",
           "IV": "E",
           "V": "F#",
-          "vi": "G#m",
-          "vii°": "A#dim"
+          "VI": "G#m",
+          "VII": "A#dim"
         }
       }
     ]

@@ -12,7 +12,7 @@ interface Gamme {
 
 const Quiz: React.FC = () => {
   const [gamme, setGamme] = useState<Gamme | null>(null);
-  const [questions, setQuestions] = useState<string[]>([]);
+  const [questions, setQuestions] = useState<string[][]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
   const [score, setScore] = useState<number>(0);
   const [answer, setAnswer] = useState<string>('');
@@ -42,8 +42,14 @@ const Quiz: React.FC = () => {
     const randomGamme = data.gammes[Math.floor(Math.random() * data.gammes.length)];
     setGamme(randomGamme);
 
-    const degrees = Object.keys(randomGamme.degres);
-    const shuffledDegrees = degrees.sort(() => 0.5 - Math.random());
+    let shuffledDegrees: string[][] = [];
+  
+    for (let i = 0; i < 10; i++) {
+      let degrees = Object.keys(randomGamme.degres);
+      degrees = degrees.sort(() => 0.5 - Math.random());
+      shuffledDegrees.push(degrees.slice(0, 3))
+    }
+
     setQuestions(shuffledDegrees);
 
     setStartTime(Date.now());
@@ -61,7 +67,7 @@ const Quiz: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (gamme && currentQuestionIndex < questions.length) {
-      const correctAnswer = gamme.degres[questions[currentQuestionIndex]];
+      const correctAnswer = questions[currentQuestionIndex].map(q => gamme.degres[q]).join(' ')
       if (answer.toLowerCase() === correctAnswer.toLowerCase()) {
         setScore(score + 1);
         setFeedback('Bonne réponse!');
@@ -69,13 +75,12 @@ const Quiz: React.FC = () => {
         setFeedback(`Mauvaise réponse. La bonne réponse était ${correctAnswer}.`);
       }
       setAnswer('');
-      const random = Math.floor(Math.random() * 7);
-      setCurrentQuestionIndex(random);
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
     }
   };
 
   const getElapsedTime = () => {
-    return ((currentTime - startTime) / 1000).toFixed(2);
+    return ((currentTime - startTime) / 1000).toFixed(0);
   };
 
   if (!gamme) {
@@ -91,7 +96,7 @@ const Quiz: React.FC = () => {
         <p className="text-lg mb-4">Temps: <span className="font-semibold">{getElapsedTime()} secondes</span></p>
         {/* {!isGameFinished() ? ( */}
           <form onSubmit={handleSubmit} className="flex flex-col">
-            <p className="text-lg mb-4">Quel est le {questions[currentQuestionIndex]} degré ?</p>
+            <p className="text-lg mb-4">Quel est le {questions[currentQuestionIndex].join(' - ')} degré ?</p>
             <input
               type="text"
               className="mb-4 p-2 border border-gray-300 rounded-md"
